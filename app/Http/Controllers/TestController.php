@@ -6,8 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\Test;
 use Illuminate\Support\Facades\DB;
 
-class TestController extends Controller {
-  public function index() {
+class TestController extends Controller
+{
+  public function index()
+  {
+    dd('test');
     // Eloquent(エロクアント)
     $values = Test::all();
     $count = Test::count();
